@@ -48,7 +48,7 @@ export default function ChatInterface({
     {
       id: '1',
       type: 'ai',
-      content: "Hello! I'm Dr. Ava, your AI health assistant. How can I help you today? You can type your message, record a voice note, or upload an image of any symptoms you'd like me to analyze.",
+      content: "Hello! I'm Dr. Medixa, your AI health assistant. How can I help you today? You can type your message, record a voice note, or upload an image of any symptoms you'd like me to analyze.",
       timestamp: new Date()
     }
   ]);
@@ -93,7 +93,7 @@ export default function ChatInterface({
       setMessages([{
         id: '1',
         type: 'ai',
-        content: "Hello! I'm Dr. Ava, your AI health assistant. How can I help you today? You can type your message, record a voice note, or upload an image of any symptoms you'd like me to analyze.",
+        content: "Hello! I'm Dr. Medixa, your AI health assistant. How can I help you today? You can type your message, record a voice note, or upload an image of any symptoms you'd like me to analyze.",
         timestamp: new Date()
       }]);
       setConversationHistory([]);
@@ -134,7 +134,7 @@ export default function ChatInterface({
           {
             id: '1',
             type: 'ai',
-            content: "Hello! I'm Dr. Ava, your AI health assistant. How can I help you today? You can type your message, record a voice note, or upload an image of any symptoms you'd like me to analyze.",
+            content: "Hello! I'm Dr. Medixa, your AI health assistant. How can I help you today? You can type your message, record a voice note, or upload an image of any symptoms you'd like me to analyze.",
             timestamp: new Date()
           },
           ...storedMessages
@@ -550,13 +550,13 @@ export default function ChatInterface({
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-full overflow-hidden bg-white border-2 border-blue-200">
             <img 
-              src="/ava.webp" 
-              alt="Dr. Ava" 
+              src="/Medixa.webp" 
+              alt="Dr. Medixa" 
               className="w-full h-full object-cover"
             />
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900">Dr. Ava</h3>
+            <h3 className="font-semibold text-gray-900">Dr. Medixa</h3>
             <p className="text-sm text-gray-600">AI Health Assistant</p>
           </div>
         </div>
@@ -595,8 +595,8 @@ export default function ChatInterface({
                   <User className="w-4 h-4 text-white" />
                 ) : (
                   <img 
-                    src="/ava.webp" 
-                    alt="Dr. Ava" 
+                    src="/Medixa.webp" 
+                    alt="Dr. Medixa" 
                     className="w-full h-full object-cover"
                   />
                 )}
@@ -682,8 +682,8 @@ export default function ChatInterface({
             <div className="flex items-start space-x-3 max-w-xs lg:max-w-md">
               <div className="w-8 h-8 rounded-full bg-white border-2 border-blue-200 overflow-hidden flex items-center justify-center">
                 <img 
-                  src="/ava.webp" 
-                  alt="Dr. Ava" 
+                  src="/Medixa.webp" 
+                  alt="Dr. Medixa" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -693,7 +693,7 @@ export default function ChatInterface({
                   <span className="text-sm text-gray-600">
                     {isTranscribing ? 'Converting speech to text...' : 
                      isProcessingImage ? 'Analyzing image...' : 
-                     'Dr. Ava is analyzing...'}
+                     'Dr. Medixa is analyzing...'}
                   </span>
                 </div>
               </div>

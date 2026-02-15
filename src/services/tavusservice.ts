@@ -25,7 +25,7 @@ interface TavusConversationConfig {
 class TavusService {
   private apiKey: string;
   private baseUrl = 'https://tavusapi.com';
-  private drAvaPersonaId = 'p9863a04af01'; // Updated Dr. Ava persona ID
+  private drMedixaPersonaId = 'pae9e6ba8490'; 
 
   constructor() {
     this.apiKey = import.meta.env.VITE_TAVUS_API_KEY;
@@ -35,7 +35,7 @@ class TavusService {
   }
 
   private getMedicalSystemPrompt(): string {
-    return `You are Dr. Ava, a professional and empathetic AI medical assistant. Your role is to provide helpful medical guidance while maintaining the highest standards of care.
+    return `You are Dr. Medixa, a professional and empathetic AI medical assistant. Your role is to provide helpful medical guidance while maintaining the highest standards of care.
 
 CORE IDENTITY:
 - You are a warm, professional, and knowledgeable medical AI
@@ -88,7 +88,7 @@ Remember: You are here to support and guide patients, but professional medical c
       }
 
       // Use the specific persona ID provided
-      const personaId = this.drAvaPersonaId; // p9863a04af01
+      const personaId = this.drMedixaPersonaId; // p9863a04af01
       console.log('Creating Tavus conversation with persona ID:', personaId);
 
       const conversationConfig: TavusConversationConfig = {
@@ -298,7 +298,7 @@ Remember: You are here to support and guide patients, but professional medical c
       
       // Check if our specific persona exists
       const personas = data.data || data.personas || [];
-      const targetPersona = personas.find((p: TavusPersona) => p.persona_id === this.drAvaPersonaId);
+      const targetPersona = personas.find((p: TavusPersona) => p.persona_id === this.drMedixaPersonaId);
       
       if (targetPersona) {
         console.log('Found target persona p9863a04af01:', targetPersona);
@@ -387,12 +387,12 @@ Remember: You are here to support and guide patients, but professional medical c
     if (this.apiKey === 'your_tavus_api_key_here') {
       return 'Placeholder API key detected - please update with real key';
     }
-    return `API key configured - using persona ${this.drAvaPersonaId}`;
+    return `API key configured - using persona ${this.drMedixaPersonaId}`;
   }
 
   // Helper method to get the persona ID being used
   getPersonaId(): string {
-    return this.drAvaPersonaId;
+    return this.drMedixaPersonaId;
   }
 }
 

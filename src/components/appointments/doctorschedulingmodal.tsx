@@ -22,7 +22,7 @@ interface DoctorSchedulingModalProps {
 const mockDoctors: Doctor[] = [
   {
     id: '1',
-    name: 'Dr. Sarah Müller',
+    name: 'Dr. Iris Müller',
     specialty: 'General Medicine',
     rating: 4.9,
     experience: '12 years',
@@ -34,7 +34,7 @@ const mockDoctors: Doctor[] = [
   },
   {
     id: '2',
-    name: 'Dr. Michael Schmidt',
+    name: 'Dr. Vara Prasad',
     specialty: 'Internal Medicine',
     rating: 4.8,
     experience: '15 years',
@@ -42,11 +42,11 @@ const mockDoctors: Doctor[] = [
     avatar: 'MS',
     consultationTypes: ['video', 'phone'],
     nextAvailable: 'Tomorrow at 10:00 AM',
-    languages: ['German', 'English']
+    languages: ['Telugu', 'English']
   },
   {
     id: '3',
-    name: 'Dr. Elena Rodriguez',
+    name: 'Dr. Elena Rossi',
     specialty: 'Family Medicine',
     rating: 4.9,
     experience: '8 years',
@@ -54,11 +54,11 @@ const mockDoctors: Doctor[] = [
     avatar: 'ER',
     consultationTypes: ['video', 'in-person'],
     nextAvailable: 'Today at 5:30 PM',
-    languages: ['German', 'Spanish', 'English']
+    languages: ['Spanish', 'English']
   },
   {
     id: '4',
-    name: 'Dr. Thomas Weber',
+    name: 'Dr. Siddharth Verma',
     specialty: 'Cardiology',
     rating: 4.7,
     experience: '20 years',
@@ -66,7 +66,7 @@ const mockDoctors: Doctor[] = [
     avatar: 'TW',
     consultationTypes: ['video', 'phone', 'in-person'],
     nextAvailable: 'Tomorrow at 2:00 PM',
-    languages: ['German', 'English']
+    languages: ['Hindi', 'English']
   },
   {
     id: '5',
@@ -78,11 +78,11 @@ const mockDoctors: Doctor[] = [
     avatar: 'PP',
     consultationTypes: ['video', 'in-person'],
     nextAvailable: 'Today at 4:15 PM',
-    languages: ['German', 'English', 'Hindi']
+    languages: ['Punjabi', 'English', 'Hindi']
   },
   {
     id: '6',
-    name: 'Dr. Robert Kim',
+    name: 'Dr. Rafael Kim',
     specialty: 'Psychiatry',
     rating: 4.9,
     experience: '14 years',
@@ -90,7 +90,7 @@ const mockDoctors: Doctor[] = [
     avatar: 'RK',
     consultationTypes: ['video', 'phone'],
     nextAvailable: 'Tomorrow at 11:30 AM',
-    languages: ['German', 'English', 'Korean']
+    languages: ['English', 'Korean']
   }
 ];
 

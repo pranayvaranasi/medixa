@@ -37,7 +37,7 @@ class ErrorBoundary extends React.Component<
         }}>
           <h1 style={{ color: '#dc3545', marginBottom: '20px' }}>Something went wrong</h1>
           <p style={{ color: '#6c757d', marginBottom: '20px' }}>
-            AvaBuddie encountered an error. Please check the console for more details.
+            Medixa encountered an error. Please check the console for more details.
           </p>
           <button 
             onClick={() => window.location.reload()}
@@ -76,7 +76,7 @@ class ErrorBoundary extends React.Component<
 }
 
 // Add console logs to help debug
-console.log('AvaBuddie starting...');
+console.log('Medixa starting...');
 console.log('Environment variables:', {
   VITE_SUPABASE_URL: import.meta.env.VITE_SUPABASE_URL ? 'Set' : 'Not set',
   VITE_SUPABASE_ANON_KEY: import.meta.env.VITE_SUPABASE_ANON_KEY ? 'Set' : 'Not set',
@@ -105,7 +105,7 @@ if (!rootElement) {
         </ErrorBoundary>
       </StrictMode>
     );
-    console.log('AvaBuddie rendered successfully');
+    console.log('Medixa rendered successfully');
   } catch (error) {
     console.error('Failed to render Medixa:', error);
     rootElement.innerHTML = `

@@ -58,7 +58,7 @@ function PatientHome({
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-4 text-white">
             <div className="flex items-center justify-between">
               <div>
-                <h1 className="text-lg font-bold mb-1">Chat with Dr. Ava</h1>
+                <h1 className="text-lg font-bold mb-1">Chat with Dr. Medixa</h1>
                 <p className="text-blue-100 text-sm">
                   Your AI health assistant • Chat, voice messages, and image analysis
                 </p>
@@ -122,7 +122,7 @@ function PatientConsultations() {
             </div>
           </div>
           <p className="text-gray-700 mb-6">
-            Connect with Dr. Ava, our AI-powered virtual doctor, for face-to-face medical consultation with realistic video interaction.
+            Connect with Dr. Medixa, our AI-powered virtual doctor, for face-to-face medical consultation with realistic video interaction.
           </p>
           <div className="space-y-3 mb-6">
             <div className="flex items-center text-sm text-gray-600">
@@ -156,7 +156,7 @@ function PatientConsultations() {
                   <Video className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">AI Consultation with Dr. Ava</p>
+                  <p className="font-medium text-gray-900">AI Consultation with Dr. Medixa</p>
                   <p className="text-sm text-gray-600">Yesterday at 2:30 PM • 15 minutes</p>
                 </div>
               </div>
@@ -168,7 +168,7 @@ function PatientConsultations() {
                   <Video className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">AI Consultation with Dr. Ava</p>
+                  <p className="font-medium text-gray-900">AI Consultation with Dr. Medixa</p>
                   <p className="text-sm text-gray-600">Last week • 20 minutes</p>
                 </div>
               </div>
@@ -196,11 +196,11 @@ function PatientImages() {
           <Camera className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <h3 className="text-lg font-medium text-gray-900 mb-2">Image Upload Available in Chat</h3>
           <p className="text-gray-600 mb-6">
-            You can upload medical images directly in your chat with Dr. Ava for instant analysis and guidance.
+            You can upload medical images directly in your chat with Dr. Medixa for instant analysis and guidance.
           </p>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-md mx-auto">
             <p className="text-blue-800 text-sm">
-              💡 <strong>Tip:</strong> Go to the Dr. Ava Chat and use the camera button to upload photos of symptoms, rashes, injuries, or medical documents.
+              💡 <strong>Tip:</strong> Go to the Dr. Medixa Chat and use the camera button to upload photos of symptoms, rashes, injuries, or medical documents.
             </p>
           </div>
         </div>
@@ -220,11 +220,11 @@ function PatientHistory() {
               <h3 className="font-medium text-gray-900">AI Video Consultation</h3>
               <span className="text-sm text-gray-500">Yesterday</span>
             </div>
-            <p className="text-gray-600 text-sm">Discussed symptoms with Dr. Ava via video call and received health recommendations.</p>
+            <p className="text-gray-600 text-sm">Discussed symptoms with Dr. Medixa via video call and received health recommendations.</p>
           </div>
           <div className="border border-gray-200 rounded-lg p-4">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="font-medium text-gray-900">Chat with Dr. Ava</h3>
+              <h3 className="font-medium text-gray-900">Chat with Dr. Medixa</h3>
               <span className="text-sm text-gray-500">2 hours ago</span>
             </div>
             <p className="text-gray-600 text-sm">Discussed symptoms and received health recommendations via chat.</p>
@@ -414,7 +414,7 @@ export default function PatientDashboard() {
   }, []);
 
   const navigationItems = [
-    { id: 'chat', icon: MessageCircle, label: 'Dr. Ava Chat' },
+    { id: 'chat', icon: MessageCircle, label: 'Dr. Medixa Chat' },
     { id: 'consultations', icon: Video, label: 'Consultations' },
     { id: 'images', icon: Camera, label: 'Upload Images' },
     { id: 'history', icon: History, label: 'History' },
@@ -481,7 +481,7 @@ export default function PatientDashboard() {
 
   const getCurrentViewTitle = () => {
     const item = navigationItems.find(item => item.id === currentView);
-    return item ? item.label : 'Dr. Ava Chat';
+    return item ? item.label : 'Dr. Medixa Chat';
   };
 
   return (
@@ -504,7 +504,7 @@ export default function PatientDashboard() {
             <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-blue-600 to-teal-600 rounded-lg">
               <Heart className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">AvaBuddie</span>
+            <span className="text-xl font-bold text-gray-900">Medixa</span>
           </Link>
           <button 
             onClick={() => setSidebarOpen(false)}

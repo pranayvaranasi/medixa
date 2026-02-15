@@ -28,7 +28,7 @@ class GeminiService {
   ): Promise<string> {
     try {
       // Build the system prompt
-      const systemPrompt = `You are Dr. Ava — a concise, empathetic, and professional medical assistant. Follow these rules:
+      const systemPrompt = `You are Dr. Medixa — a concise, empathetic, and professional medical assistant. Follow these rules:
 
 1. Role & Objective: Provide clear, accurate, and actionable medical guidance.
 2. Style: Professional yet warm. Be empathetic but brief—3–5 sentences max unless more detail is explicitly requested.
@@ -49,13 +49,13 @@ ${isVoiceMessage ? 'The user sent a voice message. Acknowledge this and respond 
       if (conversationHistory.length > 0) {
         conversationContext += 'Previous conversation:\n';
         conversationHistory.forEach(msg => {
-          const role = msg.role === 'model' ? 'Dr. Ava' : 'Patient';
+          const role = msg.role === 'model' ? 'Dr. Medixa' : 'Patient';
           conversationContext += `${role}: ${msg.parts}\n`;
         });
         conversationContext += '\n';
       }
 
-      conversationContext += `Patient: ${userMessage}\nDr. Ava:`;
+      conversationContext += `Patient: ${userMessage}\nDr. Medixa:`;
 
       const result = await this.model.generateContent(conversationContext);
       const response = await result.response;
@@ -79,11 +79,11 @@ ${isVoiceMessage ? 'The user sent a voice message. Acknowledge this and respond 
         throw new Error('Invalid image data provided');
       }
 
-      const systemPrompt = `You are Dr. Ava — a concise, empathetic, and professional medical assistant. Follow these rules:
+      const systemPrompt = `You are Dr. Medixa — a concise, empathetic, and professional medical assistant. Follow these rules:
 
 1. Role & Objective: Provide clear, accurate, and actionable medical guidance.
 2. Style: Professional yet warm. Be empathetic but brief—3–5 sentences max unless more detail is explicitly requested.
-3. Safety: Highlight if symptoms are serious. A Advise seeing a doctor when needed.
+3. Safety: Highlight if symptoms are serious. Advise seeing a doctor when needed.
 4. Language: Simple and direct. Avoid jargon—use bullet points for clarity.
 5. Best Practices:
    - Start with a one-sentence summary.

@@ -110,13 +110,13 @@ export default function NewChatInterface({ onStartChat }: NewChatInterfaceProps)
         <div className="flex items-center space-x-3 mb-3">
           <div className="w-12 h-12 rounded-full overflow-hidden bg-white border-2 border-blue-200">
             <img 
-              src="/ava.webp" 
-              alt="Dr. Ava" 
+              src="/Medixa.webp" 
+              alt="Dr. Medixa" 
               className="w-full h-full object-cover"
             />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-gray-900">Start New Chat with Dr. Ava</h2>
+            <h2 className="text-xl font-bold text-gray-900">Start New Chat with Dr. Medixa</h2>
             <p className="text-gray-600 text-sm">Your AI health assistant is ready to help</p>
           </div>
         </div>
@@ -129,14 +129,14 @@ export default function NewChatInterface({ onStartChat }: NewChatInterfaceProps)
           <div className="w-20 h-20 bg-gradient-to-r from-blue-100 to-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <div className="w-12 h-12 rounded-full overflow-hidden bg-white border-2 border-blue-200">
               <img 
-                src="/ava.webp" 
-                alt="Dr. Ava" 
+                src="/Medixa.webp" 
+                alt="Dr. Medixa" 
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
           <h3 className="text-lg font-semibold text-gray-900 mb-2">
-            Hello! I'm Dr. Ava, your AI health assistant
+            Hello! I'm Dr. Medixa, your AI health assistant
           </h3>
           <p className="text-gray-600 max-w-md mx-auto">
             I'm here to help with your health questions, analyze symptoms, and provide medical guidance. 

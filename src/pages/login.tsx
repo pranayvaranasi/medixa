@@ -129,7 +129,7 @@ export default function Login() {
             <div className="flex items-center justify-center w-12 h-12 bg-white/20 rounded-xl backdrop-blur-sm">
               <Heart className="w-7 h-7 text-white" />
             </div>
-            <span className="text-3xl font-bold">AvaBuddie</span>
+            <span className="text-3xl font-bold">Medixa</span>
           </Link>
           
           <div className="max-w-md">

@@ -123,7 +123,7 @@ export default function ChatHistoryModal({
       ? lastMessage.content.substring(0, 50) + '...'
       : lastMessage.content;
     
-    return `${lastMessage.type === 'user' ? 'You: ' : 'Dr. Ava: '}${preview}`;
+    return `${lastMessage.type === 'user' ? 'You: ' : 'Dr. Medixa: '}${preview}`;
   };
 
   if (!isOpen) return null;
@@ -156,7 +156,7 @@ export default function ChatHistoryModal({
           </div>
           <div className="text-left">
             <p className="font-medium text-gray-900">Start New Chat</p>
-            <p className="text-sm text-gray-600">Begin a fresh conversation with Dr. Ava</p>
+            <p className="text-sm text-gray-600">Begin a fresh conversation with Dr. Medixa</p>
           </div>
         </button>
 
@@ -270,7 +270,7 @@ export default function ChatHistoryModal({
             <MessageCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
             <h3 className="text-lg font-medium text-gray-900 mb-2">No chat history yet</h3>
             <p className="text-gray-600 mb-6">
-              Start your first conversation with Dr. Ava to begin building your chat history.
+              Start your first conversation with Dr. Medixa to begin building your chat history.
             </p>
             <button
               onClick={handleCreateNewSession}

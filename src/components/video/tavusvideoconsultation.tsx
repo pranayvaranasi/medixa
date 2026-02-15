@@ -202,7 +202,7 @@ export default function TavusVideoConsultation({ onClose }: TavusVideoConsultati
         if (err.message.includes('API key')) {
           errorMessage = 'Tavus API key not configured. Please check your environment variables.';
         } else if (err.message.includes('persona')) {
-          errorMessage = 'Dr. Ava persona not found. Please check your Tavus configuration.';
+          errorMessage = 'Dr. Medixa persona not found. Please check your Tavus configuration.';
         } else if (err.message.includes('permissions') || err.message.includes('access')) {
           errorMessage = err.message;
         } else {
@@ -275,15 +275,15 @@ export default function TavusVideoConsultation({ onClose }: TavusVideoConsultati
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full overflow-hidden bg-white border-2 border-blue-200">
                 <img 
-                  src="/ava.webp" 
-                  alt="Dr. Ava" 
+                  src="/medixa.webp" 
+                  alt="Dr. Medixa" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-white">Dr. Ava - AI Medical Consultation</h3>
+                <h3 className="font-semibold text-white">Dr. Medixa - AI Medical Consultation</h3>
                 <p className="text-white/70 text-sm">
-                  {connectionStatus === 'connecting' && 'Connecting to Dr. Ava...'}
+                  {connectionStatus === 'connecting' && 'Connecting to Dr. Medixa...'}
                   {connectionStatus === 'connected' && 'Connected - Ready for consultation'}
                   {connectionStatus === 'idle' && 'Ready to connect'}
                   {connectionStatus === 'error' && 'Connection failed'}
@@ -315,19 +315,19 @@ export default function TavusVideoConsultation({ onClose }: TavusVideoConsultati
                 <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <div className="w-16 h-16 rounded-full overflow-hidden bg-white border-2 border-blue-200">
                     <img 
-                      src="/ava.webp" 
-                      alt="Dr. Ava" 
+                      src="/medixa.webp" 
+                      alt="Dr. Medixa" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-4">Start AI Video Consultation</h3>
                 <p className="text-white/70 mb-6 text-lg leading-relaxed">
-                  Connect with Dr. Ava, your AI-powered virtual doctor, for personalized medical consultation. 
+                  Connect with Dr. Medixa, your AI-powered virtual doctor, for personalized medical consultation. 
                 </p>
                 
                 <div className="bg-blue-600/20 border border-blue-500/30 rounded-xl p-6 mb-8">
-                  <h4 className="text-white font-semibold mb-3">What Dr. Ava can help with:</h4>
+                  <h4 className="text-white font-semibold mb-3">What Dr. Medixa can help with:</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-white/80">
                     <div className="flex items-center space-x-2">
                       <span className="w-2 h-2 bg-green-400 rounded-full"></span>
@@ -361,7 +361,7 @@ export default function TavusVideoConsultation({ onClose }: TavusVideoConsultati
                   onClick={startConsultation}
                   className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white px-10 py-4 rounded-xl font-semibold text-lg transition-all transform hover:scale-105 shadow-lg"
                 >
-                  Start Consultation with Dr. Ava
+                  Start Consultation with Dr. Medixa
                 </button>
                 
                 <div className="mt-6 text-center">
@@ -377,7 +377,7 @@ export default function TavusVideoConsultation({ onClose }: TavusVideoConsultati
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <Loader2 className="w-16 h-16 text-blue-500 animate-spin mx-auto mb-6" />
-                <h3 className="text-2xl font-semibold text-white mb-4">Connecting to Dr. Ava...</h3>
+                <h3 className="text-2xl font-semibold text-white mb-4">Connecting to Dr. Medixa...</h3>
                 <div className="space-y-2 text-white/70">
                   <p>• {hasUserMedia ? '✓' : '○'} Camera and microphone access</p>
                   <p>• {conversationId ? '✓' : '○'} Initializing AI medical assistant</p>
@@ -386,7 +386,7 @@ export default function TavusVideoConsultation({ onClose }: TavusVideoConsultati
                 </div>
                 <div className="mt-6 bg-blue-600/20 border border-blue-500/30 rounded-lg p-4 max-w-md mx-auto">
                   <p className="text-sm text-white/80">
-                    Dr. Ava is being configured with medical expertise to provide you with the best possible consultation experience.
+                    Dr. Medixa is being configured with medical expertise to provide you with the best possible consultation experience.
                   </p>
                 </div>
               </div>
