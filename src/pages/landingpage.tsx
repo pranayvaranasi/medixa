@@ -233,7 +233,7 @@ export default function LandingPage() {
               <span className="text-2xl font-bold">Medixa</span>
             </div>
             <div className="text-gray-400 flex items-center space-x-4">
-              <span>© 2025 Medixa. Transforming healthcare through AI.</span>
+              <span>© 2026 Medixa. Transforming healthcare through AI.</span>
               <a 
                 href="https://bolt.new" 
                 target="_blank" 

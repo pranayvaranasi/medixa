@@ -401,13 +401,13 @@ export const doctorService = {
   },
 
 
-  // ...existing code...
+ 
   async getPatients(): Promise<Profile[]> {
     try {
       const profile = await profileService.getCurrentProfile();
       if (!profile) return [];
 
-     // ...existing code...
+   
       const { data, error } = await supabase
   .from('patient_doctor_relationships')
   .select(`
@@ -420,7 +420,6 @@ export const doctorService = {
   .flatMap(rel => rel.patient ?? []);
 
 
-// ...existing code...
     } catch (error) {
       handleAuthError(error);
       return [];
@@ -888,8 +887,10 @@ export const chatSessionService = {
       return null;
     }
   },
+  
 
   async getSession(id: string): Promise<ChatSession | null> {
+    console.log("getSession called with id:", id, typeof id);
     try {
       const { data, error } = await supabase
         .from('chat_sessions')
@@ -903,6 +904,8 @@ export const chatSessionService = {
       handleAuthError(error);
       return null;
     }
+    
+
   },
 
   async updateSession(id: string, updates: Partial<ChatSession>): Promise<ChatSession | null> {
@@ -943,6 +946,7 @@ export const chatSessionService = {
       handleAuthError(error);
       return [];
     }
+    
   },
 
   async deleteSession(id: string): Promise<boolean> {

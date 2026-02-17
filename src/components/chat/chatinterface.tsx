@@ -103,17 +103,22 @@ export default function ChatInterface({
   }, [sessionId]);
 
   const loadChatSession = async () => {
+    if (typeof sessionId !== "string" || sessionId.trim() === "") {
+    console.log("Blocked loadChatSession — invalid sessionId:", sessionId);
+    hasLoadedSession.current = true;
+    return;
+  }
+
     try {
       let session: ChatSession | null = null;
 
-      if (sessionId) {
-        // Load specific session
-        session = await chatSessionService.getSession(sessionId);
-      } else {
-        // For new chats, don't load any existing session
-        // This ensures we start completely fresh
-        session = null;
-      }
+      if (typeof sessionId !== "string" || sessionId.trim() === "") {
+  console.log("Skipping loadChatSession — invalid sessionId:", sessionId);
+  session=null;
+}
+else {
+  session = await chatSessionService.getSession(sessionId);
+}
 
       if (session && session.messages && session.messages.length > 0) {
         setCurrentSession(session);
@@ -157,7 +162,8 @@ export default function ChatInterface({
         }
       } else if (!sessionId) {
         // For new chats without sessionId, create a new session
-        const newSession = await chatSessionService.createNewSession();
+const newSession = await chatSessionService.createNewSession();
+console.log("New session created:", newSession);
         setCurrentSession(newSession);
         if (onSessionChange) {
           onSessionChange(newSession.id);

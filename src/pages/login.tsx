@@ -61,13 +61,13 @@ export default function Login() {
         // Navigate based on the user's actual role from the database
         switch (role) {
           case 'patient':
-            navigate('/patient');
+            navigate('/patientdashboard');
             break;
           case 'health-worker':
-            navigate('/health-worker');
+            navigate('/healthworkerdashboard');
             break;
           case 'doctor':
-            navigate('/doctor');
+            navigate('/doctordashboard');
             break;
           default:
             navigate('/');
@@ -81,13 +81,13 @@ export default function Login() {
         // Navigate based on selected role for new signups
         switch (selectedRole) {
           case 'patient':
-            navigate('/patient');
+            navigate('/patientdashboard');
             break;
           case 'health-worker':
-            navigate('/health-worker');
+            navigate('/healthworkerdashboard');
             break;
           case 'doctor':
-            navigate('/doctor');
+            navigate('/doctordashboard');
             break;
         }
       }
