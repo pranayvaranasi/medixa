@@ -64,7 +64,7 @@ export default function Login() {
             navigate('/patientdashboard');
             break;
           case 'health-worker':
-            navigate('/healthworkerdashboard');
+            navigate('/health-worker');
             break;
           case 'doctor':
             navigate('/doctordashboard');
@@ -84,7 +84,7 @@ export default function Login() {
             navigate('/patientdashboard');
             break;
           case 'health-worker':
-            navigate('/healthworkerdashboard');
+            navigate('/health-worker');
             break;
           case 'doctor':
             navigate('/doctordashboard');

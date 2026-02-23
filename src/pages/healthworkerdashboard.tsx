@@ -424,6 +424,7 @@ export default function HealthWorkerDashboard() {
   return (
     <DashboardLayout navigationItems={navigationItems} userType="health-worker">
       <Routes>
+        
         <Route path="/" element={<HealthWorkerHome />} />
         <Route path="/vitals" element={<HealthWorkerPatients />} />
         <Route path="/records" element={<HealthWorkerRecords />} />
