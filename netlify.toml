@@ -19,7 +19,7 @@
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co https://api.elevenlabs.io https://tavusapi.com https://generativelanguage.googleapis.com; font-src 'self' data:; media-src 'self' blob:;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co https://api.elevenlabs.io https://tavusapi.com https://openrouter.ai https://generativelanguage.googleapis.com; font-src 'self' data:; media-src 'self' blob:;"
 
 # Cache static assets
 [[headers]]
